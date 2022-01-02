@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<Title>Competition Crawler</Title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: rgba(255, 255, 128, .5)">
+	<center>
+		<p style="font-size: 3em;">TERM PROJECT</p>
+	</center>
+	<form METHOD="POST" ACTION="http://cspro.sogang.ac.kr/~cse20161565/cgi-bin/term_proj.php">
+		<fieldset style='background-color: beige'>	
+		<legend>CATEGORY</legend>
+			<fieldset>
+				<legend>공모분야</legend>
+				<input type="radio" name="category" id="input1" value="contypes=1"> 콘텐츠/웹툰</input>
+				<input type="radio" name="category" id="input1" value="contypes=22"> 디자인/미술</input>
+				<input type="radio" name="category" id="input1" value="contypes=7"> 사진/영상/UCC</input>
+				<input type="radio" name="category" id="input1" value="contypes=8"> 금융/경제/경영</input>
+				<input type="radio" name="category" id="input1" value="contypes=14"> 과학/공학/IT</input>
+				<input type="radio" name="category" id="input1" value="contypes=16"> 취업/창업</input><br>
+				<input type="radio" name="category" id="input1" value="contypes=18"> 환경/에너지</input>
+				<input type="radio" name="category" id="input1" value="contypes=21"> 아이디어/기획</input>
+				<input type="radio" name="category" id="input1" value="contypes=22"> 음악/예술</input>
+				<input type="radio" name="category" id="input1" value="contypes=23"> 문화/영화/문학</input>
+				<input type="radio" name="category" id="input1" value="contypes=25"> 연구/학술/논문</input>
+				<input type="radio" name="category" id="input1" value="contypes=27"> 광고/마케팅</input><br>
+				<input type="radio" name="category" id="input1" value="contypes=28"> 네이밍/슬로건</input>
+				<input type="radio" name="category" id="input1" value="contypes=29"> 의료/보건/헬스</input>
+				<input type="radio" name="category" id="input1" value="contypes=30"> 패션/뷰티</input>
+				<input type="radio" name="category" id="input1" value="contypes=31"> 정치/정책/사회</input>
+			</fieldset>
+			<fieldset>
+				<legend>시상내역</legend>
+					<input type="radio" name="award" id="input1" value="awards=1"> 1천만원이하</input>
+					<input type="radio" name="award" id="input1" value="awards=2"> 1천만원이상</input>
+					<input type="radio" name="award" id="input1" value="awards=3"> 입사시혜택</input>
+					<input type="radio" name="award" id="input1" value="awards=4"> 채용</input>
+					<input type="radio" name="award" id="input1" value="awards=5"> 상장/상품</input>
+					<input type="radio" name="award" id="input1" value="awards=6"> 100만원이하</input>
+					<input type="radio" name="award" id="input1" value="awards=7"> 100만원이상</input>
+			</fieldset>
+			
+			<fieldset>
+				<legend>지원대상</legend>
+					<input type="radio" name="target" id="input1" value="contargets=1"> 청소년</input>
+					<input type="radio" name="target" id="input1" value="contargets=2"> 대학(원)생</input>
+					<input type="radio" name="target" id="input1" value="contargets=3"> 취준생</input>
+					<input type="radio" name="target" id="input1" value="contargets=4"> 직장인</input>
+					<input type="radio" name="target" id="input1" value="contargets=5"> 누구나지원</input>	
+					<input type="radio" name="target" id="input1" value="contargets=6"> 초등학생</input>
+			</fieldset>
+			
+			<fieldset>
+				<legend>활동지역</legend>
+					<input type="radio" name="region" id="input1" value="regions=1"> 전국(오프라인)</input>
+					<input type="radio" name="region" id="input1" value="regions=2"> 수도권</input>
+					<input type="radio" name="region" id="input1" value="regions=3"> 서울</input>
+					<input type="radio" name="region" id="input1" value="regions=4"> 경기</input>
+					<input type="radio" name="region" id="input1" value="regions=5"> 인천</input>
+					<input type="radio" name="region" id="input1" value="regions=6"> 강원</input>
+					<input type="radio" name="region" id="input1" value="regions=7"> 충북</input>
+					<input type="radio" name="region" id="input1" value="regions=8"> 충남</input>
+					<input type="radio" name="region" id="input1" value="regions=9"> 대구</input>
+					<input type="radio" name="region" id="input1" value="regions=10"> 대전</input><br>
+					<input type="radio" name="region" id="input1" value="regions=11"> 울산</input>
+					<input type="radio" name="region" id="input1" value="regions=12"> 경북</input>
+					<input type="radio" name="region" id="input1" value="regions=13"> 경남</input>
+					<input type="radio" name="region" id="input1" value="regions=14"> 부산</input>
+					<input type="radio" name="region" id="input1" value="regions=15"> 광주</input>
+					<input type="radio" name="region" id="input1" value="regions=16"> 전북</input>
+					<input type="radio" name="region" id="input1" value="regions=17"> 전남</input>
+					<input type="radio" name="region" id="input1" value="regions=18"> 제주</input>
+					<input type="radio" name="region" id="input1" value="regions=19"> 해외</input>
+					<input type="radio" name="region" id="input1" value="regions=20"> 전국(온라인)</input>
+			</fieldset>
+			
+			<!--
+			<fieldset>
+				<legend>공모전 이름</legend>
+				<input type="text" name="title" id="title" placeholder ="ex)인터넷 프로그래밍">
+			</fieldset>
+			-->
+			
+			</fieldset>
+			<br>
+			<center>
+			<input type="submit" style="width : 50px; heigth : 70px;" value="검색">
+			</center>
+
+	</form>
+</body>
+
+</html>
+
+
